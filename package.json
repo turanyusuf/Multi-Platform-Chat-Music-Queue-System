@@ -1,0 +1,10 @@
+{
+  "name": "multi-platform-chat-music-queue-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build-docs.mjs"
+  }
+}
