@@ -1,0 +1,10 @@
+node_modules/
+.env
+npm-debug.log*
+*.log
+music/*.mp3
+music/*.m4a
+music/*.webm
+!music/.gitkeep
+public/assets/backgrounds/default.jpg
+data.sqlite
