@@ -1,0 +1,73 @@
+:root {
+  color-scheme: dark;
+  --bg-overlay: rgba(8, 11, 22, 0.85);
+  --panel: rgba(12, 20, 37, 0.88);
+  --text: #f2f6ff;
+  --accent: #6da7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg-overlay) center / cover no-repeat fixed;
+}
+
+.layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.panel {
+  border-radius: 16px;
+  background: var(--panel);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+#queue-list {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.admin {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+input,
+button {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text);
+}
+
+button {
+  background: var(--accent);
+  color: #04112f;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
